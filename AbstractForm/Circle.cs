@@ -9,7 +9,7 @@ namespace AbstractForm
     class Circle:FlatFigure
     {
         private const string type = "Круг";
-        private double d;
+        private double diameter;
         public override string TypeOfFigure
         {
             get
@@ -19,19 +19,19 @@ namespace AbstractForm
         }
         public Circle()
         {
-            d = 0;
+            diameter = 0;
         }
-        public Circle(double d1)
+        public Circle(double d)
         {
-            d = d1;
+            diameter = d;
         }
         public override double Perimeter()
         {
-            return d * Math.PI;
+            return diameter * Math.PI;
         }
         public override double Area()
         {
-            return Math.PI * Math.Pow(d / 2, 2);
+            return Math.PI * Math.Pow(diameter / 2, 2);
         }
     }
 }

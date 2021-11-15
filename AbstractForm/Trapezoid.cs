@@ -9,10 +9,10 @@ namespace AbstractForm
     class Trapezoid : FlatFigure
     {
         private const string type = "Трапеция";
-        private double a;
-        private double b;
-        private double c;
-        private double d;
+        private double side_1;
+        private double side_2;
+        private double side_3;
+        private double side_4;
         public override string TypeOfFigure
         {
             get
@@ -22,29 +22,29 @@ namespace AbstractForm
         }
         public Trapezoid()
         {
-            a = 0;
-            b = 0;
-            c = 0;
-            d = 0;
+            side_1 = 0;
+            side_2 = 0;
+            side_3 = 0;
+            side_4 = 0;
         }
-        public Trapezoid(double a1, double b1, double c1, double d1)
+        public Trapezoid(double a, double b, double c, double d)
         {
-            a = a1;
-            b = b1;
-            c = c1;
-            d = d1;
+            side_1 = a;
+            side_2 = b;
+            side_3 = c;
+            side_4 = d;
 
         }
         public override double Perimeter()
         {
-            return a + b + c + d;
+            return side_1 + side_2 + side_3 + side_4;
         }
         public override double Area()
         {
-            double d = (a + b) / 2;
-            double z = (Math.Pow(a - b, 2) + Math.Pow(c, 2) - Math.Pow(d, 2)) / (2 * (a - b));
-            double x = Math.Pow(c, 2) - Math.Pow(z, 2);
-            return d * Math.Sqrt(x);
+            double result_1 = (side_1 + side_2) / 2;
+            double result_2 = (Math.Pow(side_1 - side_2, 2) + Math.Pow(side_3, 2) - Math.Pow(side_4, 2)) / (2 * (side_1 - side_2));
+            double result_3 = Math.Pow(side_3, 2) - Math.Pow(result_2, 2);
+            return result_1 * Math.Sqrt(result_3);
         }
     }
 }

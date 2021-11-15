@@ -10,9 +10,9 @@ namespace AbstractForm
     {
 
         private const string type = "Треугольник";
-        private double a;
-        private double b;
-        private double c;
+        private double side_1;
+        private double side_2;
+        private double side_3;
         public override string TypeOfFigure
         {
             get
@@ -22,24 +22,24 @@ namespace AbstractForm
         }
         public Triangle()
         {
-            a = 0;
-            b = 0;
-            c = 0;
+            side_1 = 0;
+            side_2 = 0;
+            side_3 = 0;
         }
-        public Triangle(double a1,double b1,double c1)
+        public Triangle(double a,double b,double c)
         {
-            a = a1;
-            b = b1;
-            c = c1;
+            side_1 = a;
+            side_2 = b;
+            side_3 = c;
         }
         public override double Perimeter()
         {
-            return (a + b + c);
+            return (side_1 + side_2 + side_3);
         }
         public override double Area()
         {
             double p = Perimeter() / 2;
-            double s = p * (p - a) * (p - b) * (p - c);
+            double s = p * (p - side_1) * (p - side_2) * (p - side_3);
             return Math.Sqrt(s);
         }
     }

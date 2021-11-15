@@ -9,8 +9,8 @@ namespace AbstractForm
     class Rectangle : FlatFigure
     {
         private const string type = "Прямоугольник";
-        private double a;
-        private double b;
+        private double side_1;
+        private double side_2;
         public override string TypeOfFigure
         {
             get
@@ -20,21 +20,21 @@ namespace AbstractForm
         }
         public Rectangle()
         {
-            a = 0;
-            b = 0;
+            side_1 = 0;
+            side_2 = 0;
         }
-        public Rectangle(double a1, double b1)
+        public Rectangle(double a, double b)
         {
-            a = a1;
-            b = b1;
+            side_1 = a;
+            side_1 = b;
         }
         public override double Perimeter()
         {
-            return (a + b) * 2;
+            return (side_1 + side_2) * 2;
         }
         public override double Area()
         {
-            return a * b;
+            return side_1 * side_2;
         }
     }
 }
