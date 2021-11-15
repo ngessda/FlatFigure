@@ -1,0 +1,7 @@
+C:\Users\micky\source\repos\AbstractForm\AbstractForm\bin\Debug\AbstractForm.exe.config
+C:\Users\micky\source\repos\AbstractForm\AbstractForm\bin\Debug\AbstractForm.exe
+C:\Users\micky\source\repos\AbstractForm\AbstractForm\bin\Debug\AbstractForm.pdb
+C:\Users\micky\source\repos\AbstractForm\AbstractForm\obj\Debug\AbstractForm.csproj.AssemblyReference.cache
+C:\Users\micky\source\repos\AbstractForm\AbstractForm\obj\Debug\AbstractForm.csproj.CoreCompileInputs.cache
+C:\Users\micky\source\repos\AbstractForm\AbstractForm\obj\Debug\AbstractForm.exe
+C:\Users\micky\source\repos\AbstractForm\AbstractForm\obj\Debug\AbstractForm.pdb
